@@ -9,23 +9,22 @@
     <fragment
         android:id="@+id/fragment"
         android:name="com.example.hoanghaidinh_ceng319lab1_ex1.TopFragment"
-        android:layout_width="414dp"
-        android:layout_height="461dp"
-        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout="@layout/fragment_top" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <fragment
         android:id="@+id/fragment2"
         android:name="com.example.hoanghaidinh_ceng319lab1_ex1.BottomFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="#E20AED"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment"
-        tools:layout="@layout/fragment_bottom" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
 </androidx.constraintlayout.widget.ConstraintLayout>

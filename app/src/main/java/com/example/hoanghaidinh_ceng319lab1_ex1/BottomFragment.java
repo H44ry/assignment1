@@ -1,12 +1,13 @@
 package com.example.hoanghaidinh_ceng319lab1_ex1;
 
+import android.content.Context;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +60,25 @@ public class BottomFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Context context = getActivity().getApplicationContext();
+        CharSequence text = "List fragment was successfully added to the activity!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
         return inflater.inflate(R.layout.fragment_bottom, container, false);
+
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Context context = getActivity().getApplicationContext();
+        CharSequence text = "List fragment has started!";
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
     }
 }

@@ -7,8 +7,14 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:autoText="false"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/lab_assignment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
 
 </FrameLayout>
