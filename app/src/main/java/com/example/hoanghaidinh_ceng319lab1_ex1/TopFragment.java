@@ -76,7 +76,7 @@ public class TopFragment extends Fragment {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent myIntent = new Intent(view.getContext(), snizzle.class);
+                Intent myIntent = new Intent(view.getContext(), ARactivity.class);
                 startActivityForResult(myIntent,0);
             }
         });
